@@ -147,6 +147,6 @@ Implemented via **HashRouter** for smooth navigation on GitHub Pages.
 
 Aldarin Jino
 💼 Passionate about React, IoT, and Creative UI Projects.
-🔗 LinkedIn Profile (linkedin.com/in/aldarin-jino-97265023a?originalSubdomain=in)
+🔗 LinkedIn Profile (https://www.linkedin.com/in/aldarin-jino-97265023a/?originalSubdomain=in)
 
 🌐 Portfolio (https://aldarin25.github.io/Portfolio/)
