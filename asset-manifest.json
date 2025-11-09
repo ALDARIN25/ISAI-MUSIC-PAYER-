@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ISAI-MUSIC-PAYER-/static/css/main.c481b05d.css",
-    "main.js": "/ISAI-MUSIC-PAYER-/static/js/main.57ef78ad.js",
+    "main.css": "/ISAI-MUSIC-PAYER-/static/css/main.1d61e32c.css",
+    "main.js": "/ISAI-MUSIC-PAYER-/static/js/main.1395c2ea.js",
     "static/media/background.mp4": "/ISAI-MUSIC-PAYER-/static/media/background.a768e9d8a912acca8fb0.mp4",
     "static/media/profile.jpg": "/ISAI-MUSIC-PAYER-/static/media/profile.2d29cdbe3e5d7af06701.jpg",
     "static/media/bg.mp4": "/ISAI-MUSIC-PAYER-/static/media/bg.f04ebd930ddbbce646c7.mp4",
     "static/media/logo.png": "/ISAI-MUSIC-PAYER-/static/media/logo.779abba3257a0a84365d.png",
     "index.html": "/ISAI-MUSIC-PAYER-/index.html",
-    "main.c481b05d.css.map": "/ISAI-MUSIC-PAYER-/static/css/main.c481b05d.css.map",
-    "main.57ef78ad.js.map": "/ISAI-MUSIC-PAYER-/static/js/main.57ef78ad.js.map"
+    "main.1d61e32c.css.map": "/ISAI-MUSIC-PAYER-/static/css/main.1d61e32c.css.map",
+    "main.1395c2ea.js.map": "/ISAI-MUSIC-PAYER-/static/js/main.1395c2ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.c481b05d.css",
-    "static/js/main.57ef78ad.js"
+    "static/css/main.1d61e32c.css",
+    "static/js/main.1395c2ea.js"
   ]
 }
