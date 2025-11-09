@@ -139,3 +139,14 @@ Implemented via **HashRouter** for smooth navigation on GitHub Pages.
 🌙 Light/Dark mode toggle
 
 ☁ Cloud sync via Firebase
+
+
+---
+
+🧑‍💻 Author
+
+Aldarin Jino
+💼 Passionate about React, IoT, and Creative UI Projects.
+🔗 LinkedIn Profile (linkedin.com/in/aldarin-jino-97265023a?originalSubdomain=in)
+
+🌐 Portfolio (https://aldarin25.github.io/Portfolio/)
