@@ -1,0 +1,223 @@
+/* ===== Sticky Video Section ===== */
+.myplaylist-video-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.myplaylist-video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%) saturate(115%);
+}
+
+/* ===== Overlay Elements (Logo + Heading) ===== */
+.myplaylist-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  pointer-events: none;
+}
+
+.playlist-logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 80px;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+}
+
+.playlist-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #00e6e6, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Smooth fade animation for heading */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Video Bottom Fade Transition ===== */
+.video-fade-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #1b263b 100%);
+  z-index: 2;
+}
+
+/* ===== Playlist Section ===== */
+.myplaylist-section {
+  background: linear-gradient(180deg, #1b263b 0%, #415a77 50%, #6a11cb 100%);
+  padding: 70px 0 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 60vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Center Box ===== */
+.myplaylist-box {
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ===== Grid Layout ===== */
+.myplaylist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* ===== Playlist Card ===== */
+.myplaylist-card {
+  width: 100%;
+  max-width: 140px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 10px;
+  transition: all 0.25s ease;
+  text-align: center;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.myplaylist-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-6px);
+}
+
+/* Album Image */
+.myplaylist-img img {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Track Info */
+.track-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4fc3f7;
+  margin-bottom: 4px;
+}
+
+.track-artist {
+  font-size: 0.8rem;
+  color: #c5cae9;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+.myplaylist-actions {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.play-btn,
+.remove-btn {
+  padding: 5px 8px;
+  border-radius: 15px;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.play-btn {
+  background: #1db954;
+  color: white;
+}
+
+.play-btn:hover {
+  background: #19a24a;
+}
+
+.remove-btn {
+  background: #ab47bc;
+  color: white;
+}
+
+.remove-btn:hover {
+  background: #9c27b0;
+}
+
+/* Empty Message */
+.no-tracks {
+  color: #ddd;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .myplaylist-grid {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  }
+
+  .playlist-heading {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .myplaylist-grid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  }
+
+  .myplaylist-card {
+    max-width: 110px;
+  }
+
+  .myplaylist-img img {
+    height: 100px;
+  }
+
+  .playlist-heading {
+    font-size: 2rem;
+  }
+
+  .playlist-logo {
+    width: 60px;
+  }
+}
