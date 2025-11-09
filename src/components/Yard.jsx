@@ -139,10 +139,9 @@ function Yard() {
           <div className="footer-section social">
             <h4>Follow Us</h4>
             <div className="social-icons">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://aldarin25.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+              <a href="https://www.instagram.com/aldarin_jino_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.linkedin.com/in/aldarin-jino-97265023a/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
           </div>
         </div>

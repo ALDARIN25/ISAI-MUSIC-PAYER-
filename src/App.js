@@ -1,21 +1,12 @@
-// src/App.js
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-      
-          
-import Search from "./pages/Search";          
-import MyPlaylist from "./pages/MyPlaylist";  
-import Yard from "./components/Yard";          
-
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Yard from "./components/Yard";
+import Search from "./pages/Search";
+import MyPlaylist from "./pages/MyPlaylist";
 import "./index.css";
 import "./styles.css";
-import { PlayerProvider, usePlayer } from "./context/PlayerContext"; 
-import MiniPlayer from "./components/MiniPlayer"; 
-import BottomNav from "./components/BottomNav";  
-
-function HomeWrapper() {
-  const { playTrack } = usePlayer();
-  return <HomePage onPlay={playTrack} />;
-}
+import { PlayerProvider } from "./context/PlayerContext";
+import MiniPlayer from "./components/MiniPlayer";
+import BottomNav from "./components/BottomNav";
 
 function App() {
   return (
@@ -24,14 +15,12 @@ function App() {
         <div style={{ paddingBottom: 140 }}>
           <Routes>
             <Route path="/" element={<Yard />} />
-            <Route path="/home" element={<HomeWrapper />} />
             <Route path="/search" element={<Search />} />
             <Route path="/playlist" element={<MyPlaylist />} />
-            
+            <Route path="*" element={<Yard />} />
           </Routes>
         </div>
 
-        {/* Global Components */}
         <MiniPlayer />
         <BottomNav />
       </Router>
